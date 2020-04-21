@@ -1,0 +1,10 @@
+<div *ngIf="planet" class="planets">
+  <h2>{{planet.planetName | uppercase}} Details</h2>
+  <div><span>Node: </span>{{planet.planetNode}}</div>
+  <div><span>Name: </span>{{planet.planetName}}</div>
+  <div>
+    <button routerLink="/planet-edit/{{planet.id}}">
+      Edit
+    </button>
+  </div>
+</div>

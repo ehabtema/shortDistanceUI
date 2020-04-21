@@ -1,0 +1,29 @@
+<h2>Planet List</h2>
+
+<div>
+  <button class="add" title="add planet" (click)="add()">
+    + Add Planet
+  </button>
+</div>
+<br/>
+<table>
+  <tr>
+    <th>#</th>
+    <th>Node</th>
+    <th>Name</th>
+    <th
+    ></th>
+  </tr>
+  <tr  *ngFor="let p of planets; let i=index;">
+    <td>{{i+1}}</td>
+    <td>{{p.planetNode}}</td>
+    <td>{{p.planetName}}</td>
+    <td>
+      <div>
+        <a routerLink="/planet-detail/{{p._id}}"></a>
+        <button class="delete" title="delete planet "
+                (click)="delete(i+1)">x</button>
+      </div>
+    </td>
+  </tr>
+</table>

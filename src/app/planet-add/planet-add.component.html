@@ -1,0 +1,12 @@
+<div>
+  <h2>Add Planet</h2>
+  <div>
+    <label>Planet Node:
+      <input [(ngModel)]="planetData.planetNode" placeholder="Planet Node"/>
+    </label><br>
+    <label>Planet Name:
+      <input [(ngModel)]="planetData.planetName" placeholder="Planet Name"/>
+    </label><br>
+  </div>
+  <button (click)="addPlanet()">Save</button>
+</div>

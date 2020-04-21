@@ -1,0 +1,11 @@
+<div *ngIf="planetRoute" class="routes">
+  <h2>{{planetRoute.origin + planetRoute.destination | uppercase}} Details</h2>
+  <div><span>Origin: </span>{{planetRoute.origin}}</div>
+  <div><span>Destination: </span>{{planetRoute.destination}}</div>
+  <div><span>Distance: </span>{{planetRoute.distance}}</div>
+  <div>
+    <button routerLink="/routes">
+      OK
+    </button>
+  </div>
+</div>

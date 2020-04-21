@@ -1,0 +1,30 @@
+<h2>Route List</h2>
+
+<div>
+  <button class="delete" title="add route" (click)="add()">
+    + Add Route
+  </button>
+</div>
+<br/>
+<table>
+  <tr>
+    <th>#</th>
+    <th>Origin</th>
+    <th>Destination</th>
+    <th>Distance</th>
+    <th></th>
+  </tr>
+  <tr  *ngFor="let r of planetRoutes; let i=index;">
+    <td>{{i+1}}</td>
+    <td>{{r.origin}}</td>
+    <td>{{r.destination}}</td>
+    <td>{{r.distance}}</td>
+    <td>
+      <div>
+        <a routerLink="/route-detail/{{r._id}}"></a>
+        <button class="delete" title="delete route "
+                (click)="delete(i+1)">x</button>
+      </div>
+    </td>
+  </tr>
+</table>

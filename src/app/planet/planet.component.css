@@ -1,0 +1,42 @@
+/* Planets Component's private CSS styles */
+table, th , td {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+button {
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+  font-family: Arial;
+}
+
+button:hover {
+  background-color: #cfd8dc;
+}
+
+button.delete {
+  position: relative;
+  background-color: gray !important;
+  color: white;
+}
+button.add {
+  position: relative;
+  background-color: gray !important;
+  color: white;
+}
+h2 {
+  font: bold;
+}

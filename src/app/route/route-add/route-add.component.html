@@ -1,0 +1,18 @@
+<div>
+  <h2>Add Route</h2>
+  <div>
+    <label>Route Id:
+      <input [(ngModel)]="routeData.routeId" placeholder="routeId"/>
+    </label><br>
+    <label>Origin Node:
+      <input [(ngModel)]="routeData.origin" placeholder="Origin"/>
+    </label><br>
+    <label>Destination Node:
+      <input [(ngModel)]="routeData.destination" placeholder="Destination"/>
+    </label><br>
+    <label>Distance (lightyears):
+      <input [(ngModel)]="routeData.distance" placeholder="Distance"/>
+    </label><br>
+  </div>
+  <button (click)="addRoute()">Save</button>
+</div>
