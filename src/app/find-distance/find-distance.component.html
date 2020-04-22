@@ -2,13 +2,14 @@
   <h2>Find shortest route from Earth to a destination planet</h2>
   <div>
     <label>Destination planet Node:
-      <input [(ngModel)]="nodeData.node" placeholder="Node"/>
+      <input name="inputvalue" [(ngModel)]="nodeData.node" placeholder="Node"
+             oninput="this.value = this.value.toUpperCase()"/>
     </label>
     <br/>
   </div>
   <button (click)="getShortRoute()">Find</button>
   <br/>
   <span *ngIf="routes && routes.length > 0">
-    <h2> [{{routes}}]</h2>
+    <h2> The shortest route is: [{{routes}}]</h2>
   </span>
 </div>
