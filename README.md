@@ -2,11 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.2.  
 This is the user interface (UI) for the short distance Maven Spring boot project. 
-The short distance calculates the shortest route from the source planet - Earth - 
+The short distance calculates the shortest route from a source planet - Earth - 
 to any destination planet.  
-The short distance UI contains three tabs: 'planets' - for listing the planets and  
-and adding and removing planet, 'routes' - for listing the available routes and for adding  
-and deleting a route and 'distance' - for calculating a shortest route to a given planet node.
+The short distance UI contains three tabs:  
+'planets' - for listing, adding and removing planets,   
+'routes' - for listing the available routes, for adding and deleting a route and  
+'distance' - for calculating a shortest route to a given destination planet node.
+
+## Node and Angular CLI versions
+Node: 10.16.3  
+Angular: 9.0.2
 
 ## Development server
 Run 'npm install' to update all dependency modules.
@@ -19,9 +24,6 @@ Run `ng generate component component-name` to generate a new component. You can 
 ##Dependencies
 Tab -  
 npm install --save @angular/material @angular/cdk @angular/animations
-
-styless.css  
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 ## Build
 
