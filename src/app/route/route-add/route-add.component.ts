@@ -19,6 +19,7 @@ export class RouteAddComponent implements OnInit {
      addRoute() {
        this.rest.addRoute(this.routeData).subscribe((result) => {
          this.router.navigate(['/routes/']);
+         alert('New Route added successfully')
        }, (err) => {
          console.log(err);
        });

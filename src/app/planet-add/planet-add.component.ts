@@ -18,6 +18,7 @@ export class PlanetAddComponent implements OnInit {
 
     addPlanet() {
       this.rest.addPlanet(this.planetData).subscribe((result) => {
+        alert('Planet added successfully!')
         this.router.navigate(['/planets/']);
       }, (err) => {
         console.log(err);
