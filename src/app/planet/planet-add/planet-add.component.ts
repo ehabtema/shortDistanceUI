@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { PlanetService } from '../planet/planet.service';
+import { PlanetService } from '../planet.service';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
